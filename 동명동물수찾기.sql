@@ -1,0 +1,8 @@
+SELECT NAME, COUNT(ANIMAL_ID) CNT
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
+GROUP BY NAME
+HAVING COUNT(ANIMAL_ID)>=2
+ORDER BY NAME;
+
+//프로그래머스 : https://programmers.co.kr/learn/courses/30/lessons/59041
